@@ -71,6 +71,8 @@ CREATE TABLE [dbo].[tipUsuarios](
 ) ON [PRIMARY]
 
 
+
+
 CREATE TABLE [dbo].[usuarios](
 	[id_usuario] [uniqueidentifier] DEFAULT NEWID(),
 	[usu_nombre] [varchar](40) NOT NULL,
@@ -149,4 +151,7 @@ GO
 ALTER TABLE [dbo].[usuarios_tipo_rol] CHECK CONSTRAINT [fk_usuario_id_rol]
 GO
 
-INSERT INTO usuarios n
+/**---- insertar datos -------**/
+INSERT INTO usuarios VALUES (kevin,hernandez, kevin@gmail.com, carrera 22D # 75 c 03,3013916533,admi,1192705128,ncwh251ebibfe38,elmejor,true,2007-05-08 12:35:29.123);
+INSERT INTO usuarios VALUES (karina,orozco, kevin@gmail.com, carrera 22D # 75 c 03,3013916533,admi,1192705128,ncwh251ebibfe38,elmejor,true,2007-05-08 12:35:29.123);
+INSERT INTO usuarios VALUES (mateo,morelo, kevin@gmail.com, carrera 22D # 75 c 03,3013916533,admi,1192705128,ncwh251ebibfe38,elmejor,true,2007-05-08 12:35:29.123);
