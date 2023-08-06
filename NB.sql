@@ -72,7 +72,7 @@ CREATE TABLE [dbo].[tipUsuarios](
 
 
 CREATE TABLE [dbo].[usuarios](
-	[id_usuario] [uniqueidentifier] NOT NULL,
+	[id_usuario] [uniqueidentifier] DEFAULT NEWID(),
 	[usu_nombre] [varchar](40) NOT NULL,
 	[usu_apellido] [varchar](45) NOT NULL,
 	[usu_email] [varchar](45) NOT NULL,
@@ -148,3 +148,5 @@ REFERENCES [dbo].[usuarios] ([id_usuario])
 GO
 ALTER TABLE [dbo].[usuarios_tipo_rol] CHECK CONSTRAINT [fk_usuario_id_rol]
 GO
+
+INSERT INTO usuarios n
